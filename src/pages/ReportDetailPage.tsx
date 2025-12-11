@@ -2,12 +2,11 @@ import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Card } from '../components/common/Card';
 import { Button } from '../components/common/Button';
-import { Input } from '../components/common/Input';
 import { Toast } from '../components/common/Toast';
 import { enhancedMockReports } from '../data/mockReportsEnhanced';
 import { 
   ArrowLeft, CheckCircle, XCircle, Ban, AlertTriangle, 
-  Trash2, Eye, EyeOff, MessageSquare 
+  Trash2, EyeOff, MessageSquare 
 } from 'lucide-react';
 
 export function ReportDetailPage() {

@@ -6,7 +6,7 @@ import { Button } from '../components/common/Button';
 import { Input } from '../components/common/Input';
 import { Toast } from '../components/common/Toast';
 import { enhancedMockReports, reportTypeOptions, reportStatusOptions } from '../data/mockReportsEnhanced';
-import { CheckCircle, XCircle, Eye, Trash2, AlertTriangle } from 'lucide-react';
+import { CheckCircle, XCircle, Eye, Trash2 } from 'lucide-react';
 
 export function ReportsPageEnhanced() {
   const [reports, setReports] = useState(enhancedMockReports);

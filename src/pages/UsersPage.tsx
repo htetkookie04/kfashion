@@ -5,7 +5,7 @@ import { Button } from '../components/common/Button';
 import { Modal } from '../components/common/Modal';
 import { Input } from '../components/common/Input';
 import { mockUsers } from '../data/mockUsers';
-import { Edit, Trash2, CheckCircle, XCircle } from 'lucide-react';
+import { Edit, CheckCircle, XCircle } from 'lucide-react';
 
 export function UsersPage() {
   const [users, setUsers] = useState(mockUsers);

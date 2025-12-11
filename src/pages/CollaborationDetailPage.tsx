@@ -6,7 +6,7 @@ import { Toast } from '../components/common/Toast';
 import { enhancedMockCollaborations } from '../data/mockCollaborationsEnhanced';
 import { 
   ArrowLeft, CheckCircle, XCircle, Clock, Calendar, 
-  DollarSign, Target, TrendingUp, MessageSquare, Eye,
+  DollarSign, Target, TrendingUp, MessageSquare,
   EyeOff, Trash2, Hash
 } from 'lucide-react';
 import {

@@ -3,7 +3,7 @@ import { Card } from '../components/common/Card';
 import { Table } from '../components/common/Table';
 import { Button } from '../components/common/Button';
 import { mockInfluencers } from '../data/mockUsers';
-import { BadgeCheck, TrendingUp, CheckCircle, XCircle } from 'lucide-react';
+import { BadgeCheck, TrendingUp, CheckCircle } from 'lucide-react';
 
 export function InfluencersPage() {
   const [influencers, setInfluencers] = useState(mockInfluencers);

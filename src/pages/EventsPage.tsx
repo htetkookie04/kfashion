@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Card } from '../components/common/Card';
-import { Table } from '../components/common/Table';
 import { Button } from '../components/common/Button';
 import { Modal } from '../components/common/Modal';
 import { Input } from '../components/common/Input';
@@ -8,52 +7,8 @@ import { mockEvents } from '../data/mockContent';
 import { Plus, Calendar, MapPin, Users } from 'lucide-react';
 
 export function EventsPage() {
-  const [events, setEvents] = useState(mockEvents);
+  const [events] = useState(mockEvents);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const columns = [
-    { key: 'title', header: 'Event Name' },
-    {
-      key: 'location',
-      header: 'Location',
-      render: (event: any) => (
-        <div className="flex items-center gap-2">
-          <MapPin className="w-4 h-4 text-gray-400" />
-          <span>{event.location}</span>
-        </div>
-      )
-    },
-    {
-      key: 'startDate',
-      header: 'Start Date',
-      render: (event: any) => new Date(event.startDate).toLocaleDateString()
-    },
-    {
-      key: 'registeredUsers',
-      header: 'Registered',
-      render: (event: any) => (
-        <div className="flex items-center gap-2">
-          <Users className="w-4 h-4 text-gray-400" />
-          <span>{event.registeredUsers} / {event.maxParticipants}</span>
-        </div>
-      )
-    },
-    {
-      key: 'status',
-      header: 'Status',
-      render: (event: any) => (
-        <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-          event.status === 'upcoming'
-            ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
-            : event.status === 'ongoing'
-            ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
-            : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300'
-        }`}>
-          {event.status}
-        </span>
-      )
-    }
-  ];
 
   return (
     <div className="space-y-6">

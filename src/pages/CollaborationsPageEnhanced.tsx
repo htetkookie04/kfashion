@@ -6,7 +6,7 @@ import { Button } from '../components/common/Button';
 import { Input } from '../components/common/Input';
 import { Toast } from '../components/common/Toast';
 import { enhancedMockCollaborations, contentTypeOptions, collaborationStatusOptions } from '../data/mockCollaborationsEnhanced';
-import { Eye, CheckCircle, XCircle, Clock } from 'lucide-react';
+import { Eye, CheckCircle, XCircle } from 'lucide-react';
 
 export function CollaborationsPageEnhanced() {
   const [collaborations, setCollaborations] = useState(enhancedMockCollaborations);
