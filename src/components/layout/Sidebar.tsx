@@ -67,7 +67,7 @@ export function Sidebar() {
       </div>
 
       <nav className="p-4">
-        {menuItems.map((item, index) => {
+        {menuItems.map((item) => {
           const Icon = item.icon;
           
           // Handle nested menu items
