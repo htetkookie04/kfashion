@@ -11,7 +11,7 @@ export function Layout({ children }: LayoutProps) {
     <div className="min-h-screen">
       <Sidebar />
       <Topbar />
-      <main className="ml-64 mt-16 p-6">
+      <main className="ml-72 mt-16 p-6">
         {children}
       </main>
     </div>

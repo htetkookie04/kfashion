@@ -14,7 +14,7 @@ export function Topbar() {
   };
 
   return (
-    <header className="fixed top-0 left-64 right-0 h-16 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 z-10">
+    <header className="fixed top-0 left-72 right-0 h-16 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 z-10">
       <div className="h-full px-6 flex items-center justify-between">
         <div>
           <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
